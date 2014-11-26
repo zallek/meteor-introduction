@@ -1,0 +1,17 @@
+<body>
+  {{> addPost}}
+  {{> postsList}}
+</body>
+
+<template name="postsList">
+  {{#each posts}}
+	  <p>{{content}}</p>
+	{{/each}}
+</template>
+
+<template name="addPost">
+	<form>
+	  <input type="text" name="content"/>
+	  <input type="submit" value="Add">
+	</form>
+</template>
