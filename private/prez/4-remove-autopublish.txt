@@ -1,0 +1,16 @@
+//Remove autopublish
+meteor remove autopublish
+
+//Posts are not fetch automaticaly anymore
+// -> Not displayed
+//But still possible to fetch then manually, remove them etc
+
+touch lib/collections.js
+
+//Add publish
+Meteor.publish("posts", function () {
+  return Posts.find();
+});
+
+//Add subcribe
+Meteor.subscribe("posts");

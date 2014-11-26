@@ -1,0 +1,34 @@
+touch lib/collections.js
+
+//Create collection
+Posts = new Mongo.Collection("posts");
+
+
+touch lib/index.js
+
+//PostsList Template
+<template name="postsList">
+  {{#each posts}}
+    <div>
+      {{content}}
+    </div>
+  {{/each}}
+</template>
+
+//Body
+<body>
+  <h1>Simple chat</h1>
+  {{> addPost}}
+  {{> postsList}}
+</body>
+
+
+touch lib/client.js
+
+//Read & bind posts
+Template.postsList.helpers({
+  // post helper: return the list of all posts
+  posts: function () {
+    return Posts.find();
+  }
+});

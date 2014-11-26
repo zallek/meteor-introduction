@@ -1,0 +1,12 @@
+//Secure app
+meteor remove insecure
+
+//Set rules
+Posts.allow({
+  insert: function (userId, message) {
+    return true;
+  },
+  remove: function(userId) {
+    return false;
+  }
+});

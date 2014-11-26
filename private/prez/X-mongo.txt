@@ -1,0 +1,8 @@
+//MongoDB
+meteor mongo
+
+show collections
+
+db.posts.find()
+db.posts.insert({content: "DB injection"})
+

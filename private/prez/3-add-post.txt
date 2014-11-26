@@ -1,0 +1,26 @@
+//AddPost Template
+<template name="addPost">
+  <form>
+    <input type="text" name="content"/>
+    <input type="submit" value="Send">
+  </form>
+</template>
+
+//Body
+<body>
+  <h1>Simple chat</h1>
+  {{> addPost}}
+  {{> postsList}}
+</body>
+
+
+//Event listener
+Template.addPost.events({
+  // add post on form submit
+  "submit form": function (event, template) {
+    event.preventDefault();
+
+    var content = event.target.content.value;
+    Posts.insert({"content": content});
+  }
+});

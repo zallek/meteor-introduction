@@ -10,19 +10,6 @@ ls -a
 mkdir client server lib private
 rm simple_chat.html simple_chat.css simple_chat.js
 
-//Code
-touch lib/messages.js
-touch server/server.js
-touch client/client.js
-touch client/template.html
-
 //Run
 meteor run
 
-//MongoDB
-meteor mongo
-show collections
-db.posts.find()
-
-//Deploy
-meteor deploy botify.intro.meteor.com
