@@ -11,9 +11,9 @@ Template.postsList.helpers({
 Template.addPost.events({
   // add post on form submit
   "submit form": function (event, template) {
-    var content = event.target.content.value;
     event.preventDefault();
-    console.log("Add post: " + content);
+
+    var content = event.target.content.value;
     Posts.insert({"content": content});
   }
 });
