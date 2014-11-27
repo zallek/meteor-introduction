@@ -7,9 +7,11 @@ cd simple_chat
 ls -a
 
 //Project Initilization
-mkdir client server lib private
-rm simple_chat.html simple_chat.css simple_chat.js
+rm simple_chat.*
+mkdir client server lib
 
 //Run
 meteor run
 
+//Gitignore
+.meteor/local

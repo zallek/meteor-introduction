@@ -5,7 +5,7 @@ meteor remove autopublish
 // -> Not displayed
 //But still possible to fetch then manually, remove them etc
 
-touch lib/collections.js
+touch server/publish.js
 
 //Add publish
 Meteor.publish("posts", function () {

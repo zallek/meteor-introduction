@@ -10,3 +10,6 @@ Posts.allow({
     return false;
   }
 });
+
+//Client can only update, remove posts by Id
+//Though server can update, remove using selectors

@@ -4,7 +4,7 @@ touch lib/collections.js
 Posts = new Mongo.Collection("posts");
 
 
-touch lib/index.js
+touch client/index.thml
 
 //PostsList Template
 <template name="postsList">
@@ -23,7 +23,7 @@ touch lib/index.js
 </body>
 
 
-touch lib/client.js
+touch client/client.js
 
 //Read & bind posts
 Template.postsList.helpers({
