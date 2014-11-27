@@ -1,0 +1,12 @@
+<body>
+  <h1>Simple Botify Chat</h1>
+  {{> postsList}}
+</body>
+
+<template name="postsList">
+  {{#each posts}}
+    <div>
+      {{content}}
+    </div>
+  {{/each}}
+</template>
