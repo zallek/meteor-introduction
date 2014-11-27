@@ -6,7 +6,6 @@ Meteor version: 1.0.1
 
 ## Slides
 - Slides in prez/MeteorJS-introduction-slides.pdf
-- Presented at Botify
 
 ## Demo
 - Simple Chat App
