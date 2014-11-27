@@ -1,3 +1,5 @@
+Meteor.subscribe("posts");
+
 Template.postsList.helpers({
   posts: function () {
     return Posts.find();
