@@ -1,5 +1,6 @@
 <body>
   <h1>Simple Botify Chat</h1>
+  {{> addPost}}
   {{> postsList}}
 </body>
 
@@ -9,4 +10,11 @@
       {{content}}
     </div>
   {{/each}}
+</template>
+
+<template name="addPost">
+  <form>
+    <input type="text" name="content"/>
+    <input type="submit" value="Send">
+  </form>
 </template>
