@@ -2,7 +2,7 @@ Meteor.publish("posts", function(){
 	return Posts.find();
 });
 
-Meteor.allow({
+Posts.allow({
 	insert: function(userId, message){
 		return true;
 	},
