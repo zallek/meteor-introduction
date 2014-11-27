@@ -1,6 +1,7 @@
 meteor-introduction
 ===================
 Meteor introduction presented by Nicolas Fortin at Botify, Paris
+
 Meteor version: 1.0.1
 
 ## Slides
