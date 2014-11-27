@@ -1,3 +1,6 @@
 //Deploy
 meteor deploy botify.intro.meteor.com
 
+Posts.find().fetch().forEach(function(message){
+	Posts.remove(message._id)
+});
